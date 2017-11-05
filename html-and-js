@@ -3,16 +3,26 @@
 <script>
 function process()
 {
-var url="https://v2.steemconnect.com/sign/delegateVestingShares?delegator=" + document.getElementById("url").value +"&delegatee=steemthat&vesting_shares=20560.946554%20VESTS";
+var url="https://v2.steemconnect.com/sign/delegateVestingShares?delegator=" + document.getElementById("url").value +"&delegatee=steemthat&vesting_shares="+document.getElementById("steempower").value +"%20VESTS";
 location.href=url;
 return false;
 }
 </script>
 <form onSubmit="return process();">
 <center><img src="https://steemthat.com/wp-content/uploads/2017/11/The-More-PowerFull-I-Am....png" alt="SteemThatDelegateToday" width="160" height="300">
-<h2 style="color:orange;"> Delegate 10 Steem Power To Support <a href="https://steemit.com/@steemthat">@steemthat</a>. </h2><p>Enter Your Steemit Username Below To Get Started. Thank you.</p>
+<h2 style="color:orange;"> Delegate 10 Steem Power To Support <a href="https://steemit.com/@steemthat">@steemthat</a>. </h2><p>Select The Amount Of Steem Power You Wish To Delegate & Enter Your Steemit Username Below To Get Started. Thank you.</p>
+Select Amount Of Steem Power To Delegate: 
+<select id="steempower">
+<option value="20560.946554">10 Steem Power</option>
+<option value="51376.58419">25 Steem Power</option>
+<option value="102753.16839">50 Steem Power</option>
+<option value="205506.33678">100 Steem Power</option>
+</select>
+</br>
 Enter Steemit Username:<input type="text" name="url" id="url"> <input type="submit" value="Delegate Now">
+
 </center>
 </form>
-</body>
+<hr>
+</body> 
 </html>
