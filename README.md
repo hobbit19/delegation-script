@@ -13,6 +13,7 @@ steem_per_mvests
 
 Here is the formula:
 1,000,000/486.604 = V
+
 V multiplied by the number of Steem Power (10,25,50,100) to delegate = Final Answer
 
 Note The Format has to be numbers in front or the decimal 00000.000000 and has to have 6 numbers after the decimal.
